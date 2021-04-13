@@ -1,0 +1,26 @@
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookStoreBussinessLayer.deps.json
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookStoreBussinessLayer.dll
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookStoreBussinessLayer.pdb
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookDataAccess.dll
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookEntities.dll
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookDataAccess.pdb
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookEntities.pdb
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.csprojAssemblyReference.cache
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.AssemblyInfoInputs.cache
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.AssemblyInfo.cs
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.csproj.CopyComplete
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.dll
+C:\Users\abc\source\repos\WebApiAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.pdb
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookStoreBussinessLayer.deps.json
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookStoreBussinessLayer.dll
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookStoreBussinessLayer.pdb
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookDataAccess.dll
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookEntities.dll
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookDataAccess.pdb
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\bin\Debug\netstandard2.0\BookEntities.pdb
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.csprojAssemblyReference.cache
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.AssemblyInfoInputs.cache
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.AssemblyInfo.cs
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.csproj.CopyComplete
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.dll
+D:\net sol\WebApiBackendAssignment\BookStoreBussinessLayer\obj\Debug\netstandard2.0\BookStoreBussinessLayer.pdb

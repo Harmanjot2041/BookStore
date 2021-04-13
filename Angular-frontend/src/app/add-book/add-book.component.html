@@ -1,0 +1,42 @@
+<h1 class="text-center">Add Book</h1>
+<form class="container" [formGroup]="bookForm" (ngSubmit)="onSubmits()">
+    <div class="form-group">
+        <label>Product Image</label><br/>
+        <input type="file" (change)="onChange($event)" formControlName="BookImage"/>
+    </div>
+    <div class="form-group">
+        <label>Book Name</label>
+        <input type="text" class="form-control" formControlName="BookName" placeholder="book name"/>
+    </div>
+    <div class="form-group">
+        <label>Discription</label>
+        <input type="text" class="form-control" formControlName="Discription" placeholder="Discription"/>
+    </div>
+    <div class="form-group">
+        <label>Author Name</label>
+        <input type="text" class="form-control" formControlName="AuthorName" placeholder="Author name"/>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label">Category Name</label> <br/>
+        <select  class="form-control" formControlName="CategoryId" >
+            <option [value]="0" selected > select cateogry</option>
+            <option class="" *ngFor = "let cat of category" [value]="cat.categoryId">{{cat.categoryName}}</option>
+            
+        </select>
+     </div>
+    <div class="form-group">
+        <label>Number Of Books</label>
+        <input type="number" class="form-control" formControlName="NoOfBooks" placeholder="books"/>
+    </div>
+    <div class="form-group">
+        <label>Book Price</label>
+        <input type="number" class="form-control" formControlName="BookPrice" placeholder="price"/>
+    </div>
+    <div class="form-group">
+        <label>Shipping Allowed</label><br/>
+        <input type="checkbox"  formControlName="ShippingAllowed" />
+    </div>
+
+    <button class="btn btn-block mybtn btn-primary tx-tfm mt-4"  >Create <div *ngIf="submitting" class="spinner-border spinner-border-sm "></div></button>
+</form>

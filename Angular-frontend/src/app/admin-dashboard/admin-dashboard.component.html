@@ -1,0 +1,91 @@
+<div *ngIf="loading" class="spinner-border spinner-border-sm " style="margin-left: 45%;"></div>
+<div class ="container">
+    
+    <button class="btn btn-primary mt-4"  [routerLink]="['/AddBook']"> Create New</button>
+    <button class="btn btn-success mt-4" style="margin-left: 30% ;"  [routerLink]="['/Viewers']">View Viewers</button>
+    <button class="btn btn-danger mt-4" style="float: right;" [routerLink]="['/AddCategory']"> Add Cateogry</button> <br/><br/>
+    <div class="row " style="background-color:#e9ecef; padding-top: 1%; padding-bottom: 1%;">
+        <div class="col-4">
+            <div class="row" >
+              <div class="col-5">
+                  <strong>Book Name</strong>
+              </div>
+              <div class="col-7">
+                  <strong>Discription</strong>
+              </div>
+            </div>
+        </div>
+        <div class="col-5">
+          <div class="row" >
+              <div class="col-3">
+                  <strong>Author Name</strong>
+              </div>
+              <div class="col-3">
+                  <strong>No of Books </strong>
+              </div>
+              <div class="col-3">
+                  <strong>Book price</strong>
+              </div>
+              <div class="col-3">
+                  <strong>Shipping Allowed</strong>
+              </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row" >
+              <div class="col-4">
+                  <strong>Details</strong>
+              </div>
+              <div class="col-4">
+                  <strong>Edit</strong>
+              </div>
+              <div class="col-4">
+                  <strong>Delete</strong>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div *ngFor = "let book of bookList" class="row" style="padding-top: 1%;padding-bottom: 1%; border-bottom: solid #e9ecef 1px ;">
+          <div class="col-4">
+              <div class="row" >
+                <div class="col-5">
+                    {{book.bookName}} 
+                </div>
+                <div class="col-7">
+                    {{book.discription}}
+                </div>
+              </div>
+          </div>
+          <div class="col-5">
+            <div class="row" >
+                <div class="col-3">
+                    {{book.authorName}}
+                </div>
+                <div class="col-3">
+                      {{book.noOfBooks}}
+                </div>
+                <div class="col-3">
+                    {{book.bookPrice}}
+                </div>
+                <div class="col-3">
+                    {{book.shippingAllowed}}
+                </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="row" >
+                <div class="col-4">
+                  <a [routerLink]="['/BookDetails',book.bookId]">Details</a>
+                </div>
+                <div class="col-4">
+                  <a [routerLink]="['/EditBook',book.bookId]">Edit</a>
+                </div>
+                <div class="col-4">
+                  <a [routerLink]="['/Dashboard']" (click)="Delete(book.bookId)">Delete</a>
+                </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+<br/><br/>

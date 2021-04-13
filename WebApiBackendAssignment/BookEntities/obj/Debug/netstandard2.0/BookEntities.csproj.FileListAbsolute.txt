@@ -1,0 +1,16 @@
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\bin\Debug\netstandard2.0\BookEntities.deps.json
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\bin\Debug\netstandard2.0\BookEntities.dll
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.AssemblyInfoInputs.cache
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.AssemblyInfo.cs
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.csprojAssemblyReference.cache
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\bin\Debug\netstandard2.0\BookEntities.pdb
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.dll
+C:\Users\abc\source\repos\WebApiAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.pdb
+D:\net sol\WebApiBackendAssignment\BookEntities\bin\Debug\netstandard2.0\BookEntities.deps.json
+D:\net sol\WebApiBackendAssignment\BookEntities\bin\Debug\netstandard2.0\BookEntities.dll
+D:\net sol\WebApiBackendAssignment\BookEntities\bin\Debug\netstandard2.0\BookEntities.pdb
+D:\net sol\WebApiBackendAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.csprojAssemblyReference.cache
+D:\net sol\WebApiBackendAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.AssemblyInfoInputs.cache
+D:\net sol\WebApiBackendAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.AssemblyInfo.cs
+D:\net sol\WebApiBackendAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.dll
+D:\net sol\WebApiBackendAssignment\BookEntities\obj\Debug\netstandard2.0\BookEntities.pdb

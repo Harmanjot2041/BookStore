@@ -1,0 +1,32 @@
+
+<div class="container mt-4">
+    <div class="row">
+        
+            <div *ngFor = "let user of Users"  class=" mr-4" style="width: 30%;" >
+                <div class="card">
+                    <div class="card-header">
+                        <strong>{{user.name}}</strong>
+                    </div>
+                    <div class="card-body">
+                        
+                        <div class="row body1">
+                            
+                            <div class="col-12"><strong>Email</strong>: {{user.email}}</div>
+                            
+                        </div>
+                        <div class="row body1">
+                            <div class="col-12"><strong>Name</strong>: {{user.name}}</div>
+                            
+                        </div>
+                        <div class="row body1">
+                            <div class="col-12"><strong>IsActive</strong>: {{user.isActive}}</div>
+                            
+                        </div>
+                      <button class="btn btn-primary mt-3" (click) = "MakeAdmin(user.loginId)" >Make Admin</button>
+                      <button class="btn btn-danger mt-3 " (click) ="Block(user.loginId)" style="margin-left: 20%;" > Block</button>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>

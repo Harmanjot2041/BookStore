@@ -1,0 +1,13 @@
+  
+
+<form class="container " [formGroup]="categoryForm" (ngSubmit)="onSubmits()">
+	<h1  class="text-center mt-4">ADD CATEGORY</h1><br/>
+	<div class="form-group">
+		<label class="">CATEGORY NAME</label>
+		<input class="form-control" type ="text" formControlName="categoryName" placeholder="category">
+	</div>
+	<br/>
+    
+	<button class="btn btn-block mybtn btn-primary tx-tfm"> SUBMIT</button>
+    
+</form>

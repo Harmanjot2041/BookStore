@@ -1,0 +1,58 @@
+<br/>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-6">
+            
+                <img src="{{book.bookImage}}" style="width: 430px; height: 430px;" alt="book image"/>
+            
+        </div>
+        <div class="col-6">
+            <h2 class="">
+                <strong>{{book.bookName}}</strong>
+            </h2>
+            <div class="row mt-3 mb-3">
+               <div class="col-6"><strong>Description:</strong></div> 
+               <div class="col6">{{book.discription}}</div>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="col-6"><strong>Author Name:</strong></div> 
+                <div class="col6">{{book.authorName}}</div>
+             </div>
+             <div class="row mt-4 mb-4">
+                <div class="col-6"><strong>Book Price:</strong></div> 
+                <div class="col6">{{book.bookPrice}}</div>
+             </div>
+             <div class="row mt-4 mb-4">
+                <div class="col-6"><strong>Numbr of Books Avaible:</strong></div> 
+                <div class="col6">{{book.noOfBooks}}</div>
+             </div>
+             <div class="row mt-4 mb-4">
+                <div class="col-6"><strong>Category:</strong></div> 
+                <div class="col6">{{categoryName}}</div>
+             </div>
+             <div class="row mt-4 mb-4">
+                <div class="col-6"><strong>Shipping Allowed:</strong></div> 
+                <div class="col6">{{book.shippingAllowed}}</div>
+             </div>
+             <div class="row mt-4 mb-4">
+               <div class="col-6"><strong>Total number of  comments:</strong></div> 
+               <div class="col6">{{totalCmnts}}</div>
+            </div>
+             
+             
+             
+        </div>
+    </div><br/><br/>
+    <div *ngIf ="isMessage" class = "alert alert-success">{{message}}</div>
+    <h4 class="text-center">Comments</h4><br/>
+    <form *ngIf = "isUser" class="form-inline my-2 my-lg-0 " [formGroup] = "cmntForm" (ngSubmit)="onSubmits()"  style="margin: 2%;">
+      <input class="form-control mr-sm-2" type="text" formControlName="cmnt1" placeholder="add comment">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Add Comment</button>
+   </form><br>
+   <div *ngIf = "!isCmnts" class="alert alert-danger">No Comments on this book</div>
+   <div *ngIf = "isCmnts">
+      <div *ngFor = "let cmnt of cmnts" class="alert alert-success">{{cmnt.cmnt1}}</div>
+   </div>
+
+
+</div>

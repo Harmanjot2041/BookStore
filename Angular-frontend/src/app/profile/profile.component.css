@@ -1,0 +1,11 @@
+.container2{
+    width: 500px; 
+    border-radius: 2%;
+     border: 1px solid rgba(0,0,0,.2);
+     margin-top: 3%;
+     height: 450px;
+     margin-bottom: 10%;
+}
+label{
+    font-weight: 500;
+}

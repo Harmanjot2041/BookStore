@@ -1,0 +1,25 @@
+
+<nav class=" nav navbar top1">
+    <div class="container">
+       <a *ngIf = "!IsAuthenticate" class="navbar-brand" href="#">Book Store</a>
+       <a *ngIf = "IsAuthenticate" class="navbar-brand" [routerLink]="['/Profile']">{{userInfo.name}}</a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="['/UserDashboard']">Books</a>
+        </li>
+        <li *ngIf = "IsAuthenticate" class="nav-item">
+          <a class="nav-link" [routerLink]="['/Dashboard']">DashBoard</a>
+        </li>
+        <li  *ngIf = "!IsAuthenticate" class="nav-item">
+          <a class="nav-link" [routerLink]="['/Signin']">SIGN IN</a>
+        </li>
+        <li *ngIf = "!IsAuthenticate" class="nav-item">
+          <a class="nav-link" [routerLink]="['/Signup']">SIGN UP</a>
+        </li>
+        <li *ngIf = "IsAuthenticate" class="nav-item">
+          <a class="nav-link" (click) = "onLogout()">Logout</a>
+        </li>
+      </ul>
+     
+    </div>
+  </nav>

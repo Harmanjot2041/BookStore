@@ -1,0 +1,28 @@
+.top1{
+    background-color: black;
+    border-radius: 0px;
+   }
+.nav{
+    padding: 10px;
+    
+  }
+  .nav-link, .navbar-brand{
+    color: #fff;
+  
+  }
+  .nav-link:hover{
+    color:black;
+  
+  }
+  
+   .nav-item{
+    transition:transform .2s;
+    margin-left: 40px;
+  }
+  .nav-item:hover{
+  
+    transform: scale(1.1);
+    border-radius: 20px;
+    color: black;
+    background-color: #e3e3e3;
+  }

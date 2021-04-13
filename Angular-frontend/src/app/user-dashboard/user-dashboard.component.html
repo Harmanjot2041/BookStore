@@ -1,0 +1,51 @@
+<div *ngIf="loading" class="spinner-border spinner-border-sm " style="margin-left: 50%;"></div>
+<div class="container mt-4">
+    <div class="row">
+        <form class="form-inline my-2 my-lg-0 " [formGroup] = "searchForm" (ngSubmit)="onSubmits()"  style="margin: 2%;">
+            <input class="form-control mr-sm-2" type="search" formControlName="Search" placeholder="Search">
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <form class="form-inline my-2 my-lg-0 " [formGroup] = "categoryForm" (ngSubmit)="onCategory()"  style="margin-left: 40%; ">
+            <div class="form-group mr-2" >
+                <select  class="form-control" formControlName="CategoryId" >
+                    <option [value]="0" selected > select cateogry</option>
+                    <option class="" *ngFor = "let cat of category" [value]="cat.categoryId">{{cat.categoryName}}</option>
+                </select>
+            </div>
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+ <div *ngIf = "IsError" class="alert alert-danger text-center" >{{error}}</div>
+    <div class="row mt-4">
+        <div *ngFor = "let book of bookList |paginate: { id: 'listing_pagination',itemsPerPage: 6,currentPage: page}"  class=" mr-4" style="width: 30%;" >
+            <div class="card">
+                <div class="card-header">
+                    <strong>{{book.bookName |uppercase}}</strong>
+                </div>
+                <div class="card-body">
+                    <img class="card-img-top" src="{{book.bookImage}}" style="max-width: 90%; height: 300px;text-align: center; " alt="">
+                    <p class="card-text mt-3 pb-2" style="border-bottom: solid rgb(151, 141, 141) 1px;"><strong>Description</strong>: {{book.discription}}</p>
+                   
+                    <div class="row body1">
+                        
+                        <div class="col-4"><strong>Books</strong>: {{book.noOfBooks}}</div>
+                        <div class="col-8"><strong>author</strong>: {{book.authorName}}</div>
+                    </div>
+                    <div class="row body1">
+                        <div class="col-8"><strong>Price</strong>:  {{book.bookPrice| currency:'INR' }}</div>
+                        
+                    </div>
+                  <button class="btn btn-primary mt-3"  [routerLink]="['/BookDetails',book.bookId]">Details</button>
+                  <button *ngIf = "isUser" class="btn btn-danger mt-3 " style="margin-left: 20%;" [routerLink]="['/BookDetails',book.bookId]"> Add Comments</button>
+                </div>
+            </div>
+        </div>
+         
+        
+    </div>
+    <div class="pagination">
+		<pagination-controls class="page" id="listing_pagination"  (pageChange)="page = $event"></pagination-controls>
+	</div>
+</div>
+
+
